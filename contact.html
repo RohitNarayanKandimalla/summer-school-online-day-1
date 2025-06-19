@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+
+      <p>Preferred Contact Method:</p>
+      <input type="checkbox" name="contact_method" value="Email"> Email
+      <input type="checkbox" name="contact_method" value="Phone"> Phone
+      <input type="checkbox" name="contact_method" value="Text"> Text<br><br>
+
+      <p>Inquiry Type:</p>
+      <input type="radio" name="inquiry" value="General" required> General
+      <input type="radio" name="inquiry" value="Business"> Business
+      <input type="radio" name="inquiry" value="Support"> Support<br><br>
+
+      <label for="service">Select a Service:</label>
+      <select id="service" name="service">
+        <option value="web">Web Design</option>
+        <option value="ai">AI Help</option>
+        
+        <option value="consult">Consultation</option>
+        <option value="py">Other</option>
+      </select><br><br>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label for="satisfaction">Rate our site on range of 10:</label>
+      <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <p><a href="portfolio.html">Back to Portfolio</a></p>
+  </footer>
+</body>
+</html>
